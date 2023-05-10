@@ -1,0 +1,31 @@
+{
+  "url": "https://api.github.com/repos/MEKKERMB/info-screen/pages/builds/445174814",
+  "status": "built",
+  "error": {
+      "message": null
+  },
+  "pusher": {
+      "login": "MEKKERMB",
+      "id": 27371810,
+      "node_id": "MDQ6VXNlcjI3MzcxODEw",
+      "avatar_url": "https://avatars.githubusercontent.com/u/27371810?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/MEKKERMB",
+      "html_url": "https://github.com/MEKKERMB",
+      "followers_url": "https://api.github.com/users/MEKKERMB/followers",
+      "following_url": "https://api.github.com/users/MEKKERMB/following{/other_user}",
+      "gists_url": "https://api.github.com/users/MEKKERMB/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/MEKKERMB/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/MEKKERMB/subscriptions",
+      "organizations_url": "https://api.github.com/users/MEKKERMB/orgs",
+      "repos_url": "https://api.github.com/users/MEKKERMB/repos",
+      "events_url": "https://api.github.com/users/MEKKERMB/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/MEKKERMB/received_events",
+      "type": "User",
+      "site_admin": false
+  },
+  "commit": "a959921b3ec6aa28d236da14d75fcc859b3eced8",
+  "duration": 45103,
+  "created_at": "2023-05-10T07:16:46Z",
+  "updated_at": "2023-05-10T07:17:31Z"
+}
