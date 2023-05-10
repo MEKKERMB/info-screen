@@ -6,28 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./modules/loadGithubBranches.mjs" type="module"></script>
+    <link rel="stylesheet" href="./css/newsfeed.css" />
+    <script src="features/load/loadFetches.mjs" type="module"></script>
+    <script src="features/load/loadNewsFeed.mjs" type="module"></script>
+    <script src="modules/clock/clock.mjs" type="module"></script>
   </head>
 
   <body>
-    <main class="grid h-screen grid-cols-10 grid-rows-6 p-2 gap-4">
-      <section class="col-span-5 row-span-5 grid">
-        <div class="border-b border-gray-400" id="pulse"></div>
-        <div class="flex flex-col border-b border-gray-400" id="branches">
-          
-        </div>
-        <div class="border-b border-gray-400" id="traffic"></div>
-        <div class="border-b border-gray-400" id="commits"></div>
+    <main class="flex h-screen flex-col items-center">
+      <div class="flex items-end justify-between w-full px-4 pt-4 font-bold">
+        <h1 class="text-3xl">
+          Repository:
+          <span class="font-bold text-blue-500 underline border-blue-500 underline-offset-2">info-screen</span>
+        </h1>
+        <p id="clock" class="text-3xl"></p>
+      </div>
+      <section class="grid aspect-video w-screen grid-cols-10 grid-rows-6 gap-4 p-4">
+        <section class="col-span-5 row-span-5 grid grid-cols-2 grid-rows-2 gap-4">
+          <div class="flex flex-col justify-end" id="branches">
+            <div id="branchesContent" class="rounded-lg bg-gray-200 p-2">
+              <h2 class="text-2xl font-bold">Current branches:</h2>
+            </div>
+          </div>
+          <div class="flex flex-col justify-end" id="commits">
+            <div class="rounded-lg bg-gray-200 p-2">
+              <h2 class="text-2xl font-bold">Weekly Commits:</h2>
+              <div id="commitsContent" class="ml-4 mt-2 flex flex-col justify-center"></div>
+            </div>
+          </div>
+
+          <div class="flex flex-col" id="pullRequests">
+            <div id="pullRequestContent" class="rounded-lg bg-gray-200 p-2">
+              <h2 class="text-2xl font-bold">Pull Requests:</h2>
+            </div>
+          </div>
+
+          <div class="" id="latestPagesBuild">
+            <div id="latestPagesBuildContent" class="rounded-lg bg-gray-200 p-2">
+              <h2 class="text-2xl font-bold">Latest Pages build:</h2>
+            </div>
+          </div>
+        </section>
+        <section class="col-span-5 row-span-5">
+          <iframe
+            class="h-full w-full"
+            src="https://outlook.office365.com/owa/calendar/19fb459a6f9c4b1d86bc5a1788d43745@mcdmstudent.dk/de55567e3fdf4c3fa99f76da582195a65770709704528538686/calendar.html"
+            frameborder="0"></iframe>
+        </section>
+        <section id="weatherContent" class="grid place-content-center col-span-1 row-span-1"></section>
+        <section class="ticker-wrap col-span-9 row-span-1 rounded-lg bg-gray-200">
+          <div id="newsFeed" class="ticker"></div>
+        </section>
       </section>
-      <section class="col-span-5 row-span-5">
-        <!-- <iframe
-          class="h-full w-full"
-          src="https://outlook.office365.com/owa/calendar/19fb459a6f9c4b1d86bc5a1788d43745@mcdmstudent.dk/de55567e3fdf4c3fa99f76da582195a65770709704528538686/calendar.html"
-          frameborder="0"
-        ></iframe> -->
-      </section>
-      <section class="col-span-2 row-span-1"></section>
-      <section class="col-span-8 row-span-1"></section>
     </main>
   </body>
 </html>
